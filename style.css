@@ -1,0 +1,6 @@
+body{font-family:Arial,'Noto Sans TC',sans-serif;background:#fff7fb;margin:0;padding:20px}
+.header{text-align:center}
+#search{width:100%;padding:14px;border-radius:12px;border:1px solid #ddd;margin:20px 0;box-sizing:border-box}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.grid button,.card button{padding:16px;border:none;border-radius:16px;background:#ffd6e7;font-size:18px}
+.card{margin-top:20px;background:#fff;padding:20px;border-radius:18px;box-shadow:0 4px 12px rgba(0,0,0,.08);text-align:center}
