@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<rect width="512" height="512" rx="110" fill="#ff7aa8"/>
+<circle cx="256" cy="256" r="145" fill="#fff"/>
+<path d="M145 256a111 111 0 0 1 222 0c-25 50-65 73-111 73s-86-23-111-73z" fill="#ef3340"/>
+<path d="M367 256a111 111 0 0 1-222 0c25-50 65-73 111-73s86 23 111 73z" fill="#3155a6"/>
+<text x="256" y="455" text-anchor="middle" font-size="62" font-family="Arial" font-weight="700" fill="#fff">HanTalk</text>
+</svg>

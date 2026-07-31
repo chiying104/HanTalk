@@ -1,0 +1,16 @@
+{
+  "name": "HanTalk 旅行韓文",
+  "short_name": "HanTalk",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fff7fa",
+  "theme_color": "#ff7aa8",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
