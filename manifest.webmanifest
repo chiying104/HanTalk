@@ -1,10 +1,11 @@
 {
-  "name": "HanTalk 首爾旅程",
+  "name": "HanTalk Travel Edition",
   "short_name": "HanTalk",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#fff8ef",
-  "theme_color": "#d96b3c",
+  "background_color": "#f2faf8",
+  "theme_color": "#0f766e",
+  "lang": "zh-Hant",
   "icons": [
     {
       "src": "icons/icon.svg",
