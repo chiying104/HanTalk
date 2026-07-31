@@ -1,0 +1,16 @@
+{
+  "name": "HanTalk 首爾旅程",
+  "short_name": "HanTalk",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fff8ef",
+  "theme_color": "#d96b3c",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
