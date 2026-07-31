@@ -1,3 +1,10 @@
 [
-{"category":"餐廳","korean":"안녕하세요","roman":"Annyeonghaseyo","chinese":"您好"}
+{"category":"餐廳","korean":"이거 주세요","roman":"Igeo juseyo","chinese":"我要這個"},
+{"category":"餐廳","korean":"물 주세요","roman":"Mul juseyo","chinese":"請給我水"},
+{"category":"餐廳","korean":"계산해 주세요","roman":"Gyesanhae juseyo","chinese":"請結帳"},
+{"category":"購物","korean":"얼마예요?","roman":"Eolmayeyo?","chinese":"多少錢？"},
+{"category":"飯店","korean":"체크인하고 싶어요","roman":"Chekeu-in hago sipeoyo","chinese":"我要辦理入住"},
+{"category":"地鐵","korean":"명동 가요?","roman":"Myeongdong gayo?","chinese":"有到明洞嗎？"},
+{"category":"機場","korean":"수하물 찾는 곳이 어디예요?","roman":"Suhamul chatneun gosi eodiyeyo?","chinese":"行李轉盤在哪裡？"},
+{"category":"緊急","korean":"도와주세요","roman":"Dowajuseyo","chinese":"請幫幫我"}
 ]

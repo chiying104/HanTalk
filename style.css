@@ -1,6 +1,11 @@
-body{font-family:Arial,'Noto Sans TC',sans-serif;background:#fff7fb;margin:0;padding:20px}
-.header{text-align:center}
-#search{width:100%;padding:14px;border-radius:12px;border:1px solid #ddd;margin:20px 0;box-sizing:border-box}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.grid button,.card button{padding:16px;border:none;border-radius:16px;background:#ffd6e7;font-size:18px}
-.card{margin-top:20px;background:#fff;padding:20px;border-radius:18px;box-shadow:0 4px 12px rgba(0,0,0,.08);text-align:center}
+
+body{margin:0;padding:18px;background:#fff7fb;font-family:Arial,sans-serif}
+header{text-align:center;margin-bottom:15px}
+.tabs{display:flex;gap:8px;overflow:auto;margin-bottom:15px}
+.tab{background:#ffe0eb;border:none;padding:10px 16px;border-radius:999px;white-space:nowrap}
+#search{width:100%;padding:14px;border-radius:14px;border:1px solid #ddd;box-sizing:border-box}
+.card{background:#fff;margin:14px 0;padding:16px;border-radius:18px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.kr{font-size:24px;font-weight:bold}
+.ro{color:#888;margin:5px 0}
+.row{display:flex;gap:8px;margin-top:12px}
+button{border:none;border-radius:12px;padding:10px 14px;background:#ffd5e5}
