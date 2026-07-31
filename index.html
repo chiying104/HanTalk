@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#eef6ff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="HanTalk">
+  <title>HanTalk v7</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-192.svg">
+  <link rel="stylesheet" href="css/style.css?v=7001">
+</head>
+<body>
+  <header class="topbar">
+    <div><div class="eyebrow">KOREA TRAVEL COMPANION</div><h1>HanTalk <span>v7</span></h1></div>
+    <button id="installBtn" class="icon-btn hidden" type="button" aria-label="安裝">＋</button>
+  </header>
+
+  <main>
+    <section id="page-plan" class="page active">
+      <div class="hero"><div><b>首爾五日旅行</b><p>行程、導航與提醒集中管理</p></div><div class="hero-emoji">✈️</div></div>
+      <div class="toolbar"><button class="pill primary" id="addDayBtn">＋ 新增一天</button><button class="pill" id="cleanPlanBtn">全部行程</button></div>
+      <div id="planList"></div>
+    </section>
+
+    <section id="page-phrases" class="page">
+      <div class="section-title"><div><h2>旅遊韓文</h2><p>按一下直接播放，放大可拿給對方看</p></div></div>
+      <input id="phraseSearch" class="search" type="search" placeholder="搜尋韓文、拼音或中文">
+      <div id="categoryChips" class="chips"></div>
+      <div id="phraseList"></div>
+    </section>
+
+    <section id="page-ledger" class="page">
+      <div class="section-title"><div><h2>旅行記帳</h2><p>資料只儲存在你的裝置</p></div><button class="pill primary" id="addExpenseBtn">＋ 新增</button></div>
+      <div id="expenseSummary" class="summary-grid"></div>
+      <div id="expenseList"></div>
+    </section>
+
+    <section id="page-tools" class="page">
+      <div class="section-title"><div><h2>匯率換算</h2><p>可自行修改匯率，離線也能使用</p></div></div>
+      <article class="card calculator-card">
+        <label>金額<input id="fxAmount" type="number" inputmode="decimal" value="100000"></label>
+        <div class="fx-row"><label>從<select id="fxFrom"><option>KRW</option><option>TWD</option><option>USD</option><option>JPY</option></select></label><button id="swapFx" class="swap" type="button">⇄</button><label>換成<select id="fxTo"><option>TWD</option><option>KRW</option><option>USD</option><option>JPY</option></select></label></div>
+        <label>1 TWD 可兌換韓元<input id="krwPerTwd" type="number" inputmode="decimal" step="0.01" value="42.5"></label>
+        <div id="fxResult" class="fx-result"></div>
+      </article>
+      <article class="card"><h3>發音測試</h3><p class="muted">這顆按鈕不經過語句列表，可單獨確認手機或電腦的語音功能。</p><button class="pill primary voice-action" data-text="안녕하세요" data-rate="0.88">🔊 測試韓文發音</button><div id="voiceStatus" class="status"></div></article>
+    </section>
+
+    <section id="page-sos" class="page">
+      <div class="section-title"><div><h2>SOS 緊急協助</h2><p>需要時放大或播放給對方聽</p></div></div>
+      <div id="sosList"></div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="主要選單">
+    <button class="nav-btn active" data-page="plan"><span>🗓️</span>行程</button>
+    <button class="nav-btn" data-page="phrases"><span>💬</span>韓文</button>
+    <button class="nav-btn" data-page="ledger"><span>🧾</span>記帳</button>
+    <button class="nav-btn" data-page="tools"><span>💱</span>工具</button>
+    <button class="nav-btn" data-page="sos"><span>🆘</span>SOS</button>
+  </nav>
+
+  <div id="phraseModal" class="modal" aria-hidden="true"><div class="modal-panel presentation"><button class="close-btn" data-close="phraseModal">×</button><div id="modalKr" class="big-kr"></div><div id="modalRoman" class="big-roman"></div><div id="modalZh" class="big-zh"></div><div class="modal-actions"><button id="modalSpeak" class="pill primary">🔊 發音</button><button id="modalSlow" class="pill">🐢 慢速</button></div></div></div>
+  <div id="formModal" class="modal" aria-hidden="true"><div class="modal-panel"><button class="close-btn" data-close="formModal">×</button><h2 id="formTitle">新增</h2><form id="dynamicForm"></form></div></div>
+  <div id="cleanModal" class="modal" aria-hidden="true"><div class="modal-panel clean-panel"><button class="close-btn" data-close="cleanModal">×</button><h2>全部行程</h2><div id="cleanPlan"></div></div></div>
+  <div id="toast" class="toast"></div>
+
+  <script src="js/data.js?v=7001"></script>
+  <script src="js/voice.js?v=7001"></script>
+  <script src="js/app.js?v=7001"></script>
+</body>
+</html>
